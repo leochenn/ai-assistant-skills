@@ -31,6 +31,9 @@ Automates the process of publishing local skills to the leochenn/ai-assistant-sk
 ### 9. brainstorming
 You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
 
+### 10. prompt-engineering
+Use this skill when you writing commands, hooks, skills for Agent, or prompts for sub agents or any other LLM interaction, including optimizing prompts, improving LLM outputs, or designing production prompt templates.
+
 ## 🚀 Usage
 
 Each skill folder typically contains a `SKILL.md` file with detailed instructions and metadata.
