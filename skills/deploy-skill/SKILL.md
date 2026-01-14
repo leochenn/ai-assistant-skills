@@ -54,7 +54,7 @@ description: 自动化将本地开发的 Skill 发布到 leochenn/ai-assistant-s
 - **Branch**: `main`
 - **Message**: `Deploy skill: [skill_name]`
 - **Files**: 
-    - 包含脚本返回的 `files` 列表（注意：脚本返回的路径是相对路径，直接使用即可）。
+    - 包含脚本返回的 `files` 列表（注意：脚本返回的路径 is 相对路径，直接使用即可）。
     - 包含更新后的 `README.md` 和 `README_CN.md`。
 
 ## 异常处理

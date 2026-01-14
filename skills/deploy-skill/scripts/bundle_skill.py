@@ -79,4 +79,4 @@ if __name__ == "__main__":
     parser.add_argument("--skill_name", required=True, help="The name of the skill folder to deploy")
     args = parser.parse_args()
     
-    bundle_skill(args.skill_name)
+    bundle_skill(args.unit_name if hasattr(args, 'unit_name') else args.skill_name)
