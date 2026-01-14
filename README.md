@@ -28,6 +28,9 @@ A utility to capture screenshots on Windows. Supports specific region selection 
 ### 8. deploy-skill
 Automates the process of publishing local skills to the leochenn/ai-assistant-skills GitHub repository. Supports automatic file bundling, description extraction, updating README and README_CN, and executing Git push.
 
+### 9. brainstorming
+You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
+
 ## 🚀 Usage
 
 Each skill folder typically contains a `SKILL.md` file with detailed instructions and metadata.

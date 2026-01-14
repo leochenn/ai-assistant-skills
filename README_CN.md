@@ -28,6 +28,9 @@
 ### 8. deploy-skill
 自动化将本地开发的 Skill 发布到 leochenn/ai-assistant-skills GitHub 仓库。支持自动打包文件、提取描述、更新 README 和 README_CN，并执行 Git 推送。
 
+### 9. brainstorming
+在进行任何创意工作（如创建功能、构建组件、添加功能或修改行为）之前，你必须使用此技能。在实施之前探索用户意图、需求和设计。
+
 ## 🚀 使用方法
 
 每个技能文件夹通常包含一个带有详细说明和元数据的 `SKILL.md` 文件。
