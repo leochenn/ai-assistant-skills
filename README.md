@@ -25,6 +25,9 @@ A meta-skill guide and template for creating new skills. Follows the standard st
 ### 7. windows-screenshot
 A utility to capture screenshots on Windows. Supports specific region selection and window handling.
 
+### 8. deploy-skill
+Automates the process of publishing local skills to the leochenn/ai-assistant-skills GitHub repository. Supports automatic file bundling, description extraction, updating README and README_CN, and executing Git push.
+
 ## 🚀 Usage
 
 Each skill folder typically contains a `SKILL.md` file with detailed instructions and metadata.

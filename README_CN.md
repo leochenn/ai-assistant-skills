@@ -25,6 +25,9 @@
 ### 7. windows-screenshot
 在 Windows 上进行截图的实用程序。支持特定区域选择和窗口处理。
 
+### 8. deploy-skill
+自动化将本地开发的 Skill 发布到 leochenn/ai-assistant-skills GitHub 仓库。支持自动打包文件、提取描述、更新 README 和 README_CN，并执行 Git 推送。
+
 ## 🚀 使用方法
 
 每个技能文件夹通常包含一个带有详细说明和元数据的 `SKILL.md` 文件。
