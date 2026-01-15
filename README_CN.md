@@ -34,6 +34,12 @@
 ### 10. prompt-engineering
 在编写命令、钩子、代理技能、子代理提示词或任何其他 LLM 交互时使用此技能，包括优化提示词、改进 LLM 输出或设计生产级提示词模板。
 
+### 11. vercel-react-best-practices
+来自 Vercel 工程团队的 React 和 Next.js 性能优化指南。此技能应在编写、审查或重构 React/Next.js 代码时使用，以确保最佳性能模式。在涉及 React 组件、Next.js 页面、数据获取、包大小优化或性能改进的任务时触发。
+
+### 12. web-design-guidelines
+根据 Web 界面指南审查 UI 代码。当被要求“审查我的 UI”、“检查无障碍性”、“审计设计”、“审查 UX”或“根据最佳实践检查我的网站”时使用。
+
 ## 🚀 使用方法
 
 每个技能文件夹通常包含一个带有详细说明和元数据的 `SKILL.md` 文件。

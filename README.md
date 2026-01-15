@@ -34,6 +34,12 @@ You MUST use this before any creative work - creating features, building compone
 ### 10. prompt-engineering
 Use this skill when you writing commands, hooks, skills for Agent, or prompts for sub agents or any other LLM interaction, including optimizing prompts, improving LLM outputs, or designing production prompt templates.
 
+### 11. vercel-react-best-practices
+React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
+
+### 12. web-design-guidelines
+Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
+
 ## 🚀 Usage
 
 Each skill folder typically contains a `SKILL.md` file with detailed instructions and metadata.
