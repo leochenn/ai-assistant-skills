@@ -40,6 +40,12 @@ React and Next.js performance optimization guidelines from Vercel Engineering. T
 ### 12. web-design-guidelines
 Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
 
+### 13. docx
+Comprehensive document creation, editing, and analysis tool. Supports tracked changes, comments, formatting preservation, and text extraction. Ideal for creating new documents from scratch or editing existing ones with complex requirements.
+
+### 14. image-gen
+A unified AI image generation tool integrating Gemini, Doubao, and Qwen capabilities. Supports automatic routing to different models based on user instructions, defaulting to Gemini.
+
 ## 🚀 Usage
 
 Each skill folder typically contains a `SKILL.md` file with detailed instructions and metadata.
