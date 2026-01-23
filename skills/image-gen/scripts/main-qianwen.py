@@ -140,7 +140,9 @@ def run_task(prompt, output_file):
             mode_switched = False
             for mode in modes:
                 try:
-                    btn = page.locator(f"text={mode}").first
+                    # 使用正则全匹配，防止匹配到侧边栏历史记录 (如 "AI绘制猫图像")
+                    # ^\s*...\s*$ 匹配整个文本内容，允许前后有空白
+                    btn = page.locator(f"text=/^\\s*{mode}\\s*$/").first
                     if btn.is_visible():
                         print(f"🔄 切换模式: 点击 '{mode}'...")
                         btn.click()
@@ -154,12 +156,39 @@ def run_task(prompt, output_file):
 
             # 4. 输入提示词
             print(f"⌨️ 输入提示词: {prompt}")
-            textarea = page.locator("textarea[placeholder='向千问提问']").first
-            if not textarea.is_visible():
+            
+            # 尝试多种定位方式
+            textarea = None
+            
+            # 方式1: 具体的 Placeholder (针对生图模式)
+            try:
+                # 使用部分匹配，更稳健
+                t = page.locator("textarea[placeholder*='图像生成']").first
+                if t.is_visible(): textarea = t
+            except: pass
+            
+            # 方式2: 原有的 Placeholder (针对普通对话模式)
+            if not textarea:
+                try:
+                    t = page.locator("textarea[placeholder*='千问']").first
+                    if t.is_visible(): textarea = t
+                except: pass
+
+            # 方式3: 任何可见的 textarea
+            if not textarea:
+                try:
+                    textareas = page.locator("textarea").all()
+                    for t in textareas:
+                        if t.is_visible():
+                            textarea = t
+                            break
+                except: pass
+            
+            if not textarea:
                 # 备用：寻找 contenteditable
                 textarea = page.locator("div[contenteditable='true']").first
             
-            if not textarea.is_visible():
+            if not textarea or not textarea.is_visible():
                 print("❌ 无法定位输入框")
                 sys.exit(1)
 
